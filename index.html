@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE SPORTING TIMES — Too Big To Fail</title>
+<title>THE SPORTING TIMES - Too Big To Fail</title>
 <meta name="description" content="Emergency Premier League Relief Package Announced for Tottenham Hotspur After Unprecedented Emotional Hardship Among Supporters">
-<meta property="og:title" content="TOO BIG TO FAIL — Emergency Premier League Relief Package for Spurs">
+<meta property="og:title" content="TOO BIG TO FAIL - Emergency Premier League Relief Package for Spurs">
 <meta property="og:description" content="League chiefs confirm provisional 'Compassionate Non-Relegation Status' following nationwide concern over grown adults weeping in £200 replica shirts">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -293,6 +293,51 @@
   .headline-meta strong {
     color: var(--ink);
     font-weight: 600;
+  }
+
+  /* ─── TABLE OF CONTENTS ─── */
+  .toc {
+    border: 1px solid var(--rule-light);
+    padding: 20px 28px;
+    margin-bottom: 30px;
+    background: var(--paper);
+  }
+  .toc h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc-counter;
+    padding: 0;
+  }
+  .toc ol li {
+    counter-increment: toc-counter;
+    margin-bottom: 6px;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .toc ol li::before {
+    content: counter(toc-counter, upper-roman) ". ";
+    color: var(--crimson);
+    font-weight: 600;
+  }
+  .toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--rule-light);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .toc a:hover {
+    color: var(--crimson);
+    border-color: var(--crimson);
   }
 
   /* ─── ARTICLE GRID ─── */
@@ -745,14 +790,14 @@
     <span>"Process" now classified as a controlled substance by Home Office</span>
     <span>Newcastle delegation arrives with ceremonial banner of solidarity</span>
     <span>Man United offer to lend transitional-rebuild narratives</span>
-    <span>TalkSport presenter sacked after on-air "Diddums" remark — #DiddumGate trends for nine hours</span>
+    <span>TalkSport presenter sacked after on-air "Diddums" remark - #DiddumGate trends for nine hours</span>
     <span>Premier League activates Compassion Framework for first time in league history</span>
     <span>North London emotional load-bearing infrastructure under emergency review</span>
     <span>Replica shirt absorption levels reach critical threshold</span>
     <span>"Process" now classified as a controlled substance by Home Office</span>
     <span>Newcastle delegation arrives with ceremonial banner of solidarity</span>
     <span>Man United offer to lend transitional-rebuild narratives</span>
-    <span>TalkSport presenter sacked after on-air "Diddums" remark — #DiddumGate trends for nine hours</span>
+    <span>TalkSport presenter sacked after on-air "Diddums" remark - #DiddumGate trends for nine hours</span>
   </div>
 </div>
 
@@ -816,6 +861,17 @@
         disappointment within a single calendar year.
       </p>
 
+      <nav class="toc fade-in">
+        <h4>In This Article</h4>
+        <ol>
+          <li><a href="#sympathy">Nationwide Sympathy Response</a></li>
+          <li><a href="#shirt-crisis">Replica Shirt Crisis Escalates</a></li>
+          <li><a href="#diddums">TalkSport Presenter Sacked After On-Air "Diddums" Remark</a></li>
+          <li><a href="#infrastructure">"They Simply Don't Have the Infrastructure"</a></li>
+          <li><a href="#temporary">"Temporary Measure Only," League Insists</a></li>
+        </ol>
+      </nav>
+
       <p class="fade-in">
         The decision follows what insiders described as "sustained scenes of emotional distress" across
         North London and beyond, as rival fans reported encountering clusters of Spurs supporters staring
@@ -825,7 +881,7 @@
       <div class="inline-quote fade-in">
         <p>"You don't like to see it. Not really. They're just standing there holding tote bags and
         whispering about <em>process</em>."</p>
-        <cite>— An Arsenal supporter, speaking carefully and with visible restraint</cite>
+        <cite>An Arsenal supporter, speaking carefully and with visible restraint</cite>
       </div>
 
       <p class="fade-in">
@@ -841,7 +897,7 @@
         <cite>A Premier League spokesperson</cite>
       </div>
 
-      <h3 class="fade-in">Nationwide Sympathy Response</h3>
+      <h3 id="sympathy" class="fade-in">Nationwide Sympathy Response</h3>
 
       <div class="two-col fade-in">
         <p>
@@ -858,10 +914,10 @@
 
       <div class="ceremonial-banner fade-in">
         <p>"We Have Been There. It Passes."</p>
-        <cite>— Ceremonial banner carried by a delegation from Newcastle United</cite>
+        <cite>Ceremonial banner carried by a delegation from Newcastle United</cite>
       </div>
 
-      <h3 class="fade-in">Replica Shirt Crisis Escalates</h3>
+      <h3 id="shirt-crisis" class="fade-in">Replica Shirt Crisis Escalates</h3>
 
       <p class="fade-in">
         Retail analysts confirmed a sharp increase in emergency scarf-wringing activity, accompanied by a
@@ -871,7 +927,7 @@
 
       <div class="inline-quote fade-in">
         <p>"We just thought this year might be different."</p>
-        <cite>— A Tottenham supporter, clutching a match-day latte with trembling dignity</cite>
+        <cite>A Tottenham supporter, clutching a match-day latte with trembling dignity</cite>
       </div>
 
       <div class="observation-box fade-in">
@@ -881,7 +937,7 @@
         cumulative effect on national wellbeing.</p>
       </div>
 
-      <h3 class="fade-in">TalkSport Presenter Sacked After On-Air "Diddums" Remark</h3>
+      <h3 id="diddums" class="fade-in">TalkSport Presenter Sacked After On-Air "Diddums" Remark</h3>
 
       <p class="fade-in">
         The crisis deepened yesterday when veteran TalkSport presenter <strong>Keith Hargreaves</strong>,
@@ -908,7 +964,7 @@
         significantly below the standards of empathy expected of our presenters. Keith's
         contract has been terminated. We wish him well in his future endeavours, which
         will not include working here."</p>
-        <cite>— TalkSport, official statement</cite>
+        <cite>TalkSport, official statement</cite>
       </div>
 
       <p class="fade-in">
@@ -943,7 +999,7 @@
         are valid."
       </p>
 
-      <h3 class="fade-in">"They Simply Don't Have the Infrastructure"</h3>
+      <h3 id="infrastructure" class="fade-in">"They Simply Don't Have the Infrastructure"</h3>
 
       <p class="fade-in">
         Central to the League's decision was a newly commissioned psychological impact assessment
@@ -954,7 +1010,7 @@
       <p class="fade-in">
         The report, compiled by a panel of sports psychologists, behavioural economists and one
         grief counsellor who asked not to be named, found that prolonged exposure to top-flight
-        football — however painful — had left Spurs fans with "no emotional calluses whatsoever"
+        football, however painful, had left Spurs fans with "no emotional calluses whatsoever"
         and a "dangerously underdeveloped capacity for lower-league coping."
       </p>
 
@@ -963,13 +1019,13 @@
         contemplated League One on a theoretical basis. It would be like asking someone
         who's only ever flown business class to suddenly take a replacement bus service.
         The nervous system isn't built for it."</p>
-        <cite>— Dr. Helen Ashworth, Sports Trauma Unit, University of Hertfordshire</cite>
+        <cite>Dr. Helen Ashworth, Sports Trauma Unit, University of Hertfordshire</cite>
       </div>
 
       <p class="fade-in">
         By contrast, the report noted that supporters of clubs such as Sunderland, Leeds United
         and Nottingham Forest had over decades developed what researchers termed "robust relegation
-        musculature" — a deep, almost structural resilience forged through repeated exposure to
+        musculature", a deep, almost structural resilience forged through repeated exposure to
         administrative chaos, last-day collapses, and post-match car park silences.
       </p>
 
@@ -982,7 +1038,7 @@
 
       <div class="observation-box fade-in">
         <div class="obs-label">Key Finding</div>
-        <p>The assessment classified Tottenham supporters as "Relegation Naïve (Category A)" — a
+        <p>The assessment classified Tottenham supporters as "Relegation Naïve (Category A)", a
         designation previously applied only to Manchester City fans between 1998 and 2001, before
         their brief but formative stint in the third tier provided what analysts called "invaluable
         suffering credentials."</p>
@@ -991,7 +1047,7 @@
       <p class="fade-in">
         When asked whether the measure was simply rewarding a club for having been mediocre rather
         than catastrophic, a League spokesperson replied: "We prefer the phrase <em>consistently
-        present but persistently underwhelming</em>. And yes — precisely because they have never
+        present but persistently underwhelming</em>. And yes, precisely because they have never
         fallen, they must not be allowed to. The shock would be unconscionable."
       </p>
 
@@ -1003,7 +1059,7 @@
         <cite>A senior Premier League executive</cite>
       </div>
 
-      <h3 class="fade-in">"Temporary Measure Only," League Insists</h3>
+      <h3 id="temporary" class="fade-in">"Temporary Measure Only," League Insists</h3>
 
       <p class="fade-in">
         Premier League officials emphasised that the immunity is strictly provisional and will remain
@@ -1018,7 +1074,7 @@
       </p>
 
       <p class="fade-in" style="font-style: italic; color: var(--rule-light); margin-top: 36px; text-align: center !important; font-family: 'EB Garamond', serif; letter-spacing: 1px;">
-        — Additional reporting by our Emotional Infrastructure Correspondent —
+        Additional reporting by our Emotional Infrastructure Correspondent
       </p>
 
     </article>
@@ -1121,7 +1177,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 // Share functionality
 function shareArticle(platform) {
   const url = window.location.href;
-  const text = 'TOO BIG TO FAIL — Emergency Premier League Relief Package for Tottenham Hotspur';
+  const text = 'TOO BIG TO FAIL - Emergency Premier League Relief Package for Tottenham Hotspur';
   const map = {
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
